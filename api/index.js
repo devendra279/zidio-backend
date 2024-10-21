@@ -6,10 +6,15 @@ import cors from "cors";
 import User from "../model/user.js"
 
 const app = express();
-
+const corsOptions = {
+  origin: 'https://zidio-backend-seven.vercel.app/',
+  optionsSuccessStatus: 200,
+}
+//cors middleware
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+// app.use(cors());
 
 mongoose.connect("mongodb+srv://devendrajangid202:e6Eie2Ne0857Qos6@cluster0.m79tf.mongodb.net/",{useNewUrlParser: true,
     useUnifiedTopology: true}).then(()=>{
