@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import cors from "cors";
-import User from "./model/user.js"
+import User from "../model/user.js"
 
 const app = express();
 
