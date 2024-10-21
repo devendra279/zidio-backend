@@ -7,7 +7,7 @@ import User from "../model/user.js"
 
 const app = express();
 const corsOptions = {
-  origin: 'https://zidio-backend-seven.vercel.app/',
+  origin: 'https://zidio-team-8.vercel.app/',
   optionsSuccessStatus: 200,
 }
 //cors middleware
